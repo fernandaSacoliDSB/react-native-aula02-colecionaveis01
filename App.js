@@ -14,11 +14,58 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen name="Inicial" component={Inicial} />
-      <Stack.Screen name="Colecao" component={Colecao} />
-      <Stack.Screen name="Item" component={Item} />
+        <Stack.Screen
+        name="Inicial"
+        component={Inicial}
+        options={
+          { CardStyle: styles.screenInicial,
+          headerStyle: {backgroundColor: '#14417b'},
+          headerTintColor: '#FFFFFF',
+          }
+        }
+        />
+           <Stack.Screen
+        name="Colecao"
+        component={Colecao}
+        options={
+          { CardStyle: styles.screenColecao,
+          headerStyle: {backgroundColor: '#14417b'},
+          headerTintColor: '#FFFFFF',
+          }
+        }
+        />
+
+        <Stack.Screen
+          name="Item"
+          component={Colecao}
+          options={
+          { CardStyle: styles.screenItem,
+          headerStyle: {backgroundColor: '#14417b'},
+          headerTintColor: '#FFFFFF',
+         }
+       }
+       />
       </Stack.Navigator>
+      
     </NavigationContainer>
+   
   );
   
   }
+
+  const styles = StyleSheet.create({
+        screenInicial: {
+          backgroundColor: '#000000'
+        },
+        screenColecao: {
+          backgroundColor: '#000000'
+        },
+        screenItem: {
+          backgroundColor: '#000000'
+        },
+  });
+
+
+
+
+ 
