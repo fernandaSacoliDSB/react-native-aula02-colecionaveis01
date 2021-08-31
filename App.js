@@ -1,21 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Inicial from './src/views/Inicial/Inicial';
+import Colecao from './src/views/Colecao/Colecao';
+import Item from './src/views/Item/Item';
+
+const Stack = createStackNavigator();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+      <Stack.Screen name="Inicial" component={Inicial} />
+      <Stack.Screen name="Colecao" component={Colecao} />
+      <Stack.Screen name="Item" component={Item} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+  
+  }
