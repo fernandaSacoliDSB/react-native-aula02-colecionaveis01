@@ -37,7 +37,7 @@ export default function App() {
 
         <Stack.Screen
           name="Item"
-          component={Colecao}
+          component={Item}
           options={
           { CardStyle: styles.screenItem,
           headerStyle: {backgroundColor: '#14417b'},
