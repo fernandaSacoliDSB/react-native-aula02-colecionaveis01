@@ -18,7 +18,7 @@ const Drawer = createDrawerNavigator();
 function rotasStack() {
 
   return(
-    <Stack.Navigator initialRouteName="Inicial">
+    <Stack.Navigator initialRouteName='Inicial'>
 
       <Stack.Screen 
       name="Inicial"
@@ -58,6 +58,17 @@ function rotasStack() {
   );
 }
 
+function rotasDrawer (){
+  return (
+    <Drawer.Navigator initialRouteName='Inicial'>
+      <Drawer.Screen name="Inicial" component={rotasStack}/>
+      <Drawer.Screen name="Colecao" component={Colecao}/>
+      <Drawer.Screen name="Item" component={Item}/>
+      <Drawer.Screen name="Perfil" component={Perfil}/>
+    </Drawer.Navigator>
+  );
+}
+
 export default function App() {
   return (
     <NavigationContainer>
@@ -71,7 +82,7 @@ export default function App() {
         }
       }
       >
-        <Tab.Screen name="Inicial" component={rotasStack} />
+        <Tab.Screen name="Inicial" component={rotasDrawer} />
         <Tab.Screen name="Perfil" component={Perfil} />
         </Tab.Navigator>
     </NavigationContainer>
