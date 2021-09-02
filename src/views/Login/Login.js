@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextBase, View, TextInput, TouchableOpacity, Alert } from 'react-native';
+import { Text, View, TextInput, TouchableOpacity, Alert } from 'react-native';
 import estiloLogin from './estiloLogin';
 
 function Login({navigation}) {
@@ -16,20 +16,26 @@ function Login({navigation}) {
                   ],
             );
         } else {
-            navigation.replace('inicial', {login: login});
+            navigation.replace('Inicial', {login: login});
         }
     }
         return (
-            <View style={estiloLogin.cointainer}>
+            <View style={estiloLogin.container}>
                 <View style={estiloLogin.borda}>
                     <Text style={estiloLogin.texto}>Login</Text>
+                    <TextInput
+                    style={estiloLogin.campo}
+                    placeholder="Login"
+                    onChangeText={login => setLogin(login)}
+                    value={login}
+                    />
                     <TextInput
                     style={estiloLogin.campo}
                     placeholder="Senha"
                     onChangeText={senha => setSenha(senha)}
                     value={senha}
                     />
-                <TouchableOpacity style={estiloLogin.botaoCointainer} onPress={entrar}>
+                <TouchableOpacity style={estiloLogin.botaoContainer} onPress={entrar}>
                     <Text style={estiloLogin.botaoTexto}>Entrar</Text>
                 </TouchableOpacity>
 
