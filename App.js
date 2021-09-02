@@ -25,8 +25,7 @@ function rotasStack() {
       component={Inicial}
       options={
         {cardStyle: styles.screenInicial,
-          headerStyle: {backgroundColor: '#14417b'},
-          headerTintColor: '#FFFFFF',
+         headerShown: false,
         }
       }
 
@@ -37,8 +36,7 @@ function rotasStack() {
               component={Colecao}
               options={
                 {cardStyle: styles.screenItem,
-                  headerStyle: {backgroundColor: '#14417b'},
-                  headerTintColor: '#FFFFFF',
+                  headerShown: false,
                 }
               }
 
@@ -48,8 +46,7 @@ function rotasStack() {
               component={Item}
               options={
                 {cardStyle: styles.screenItem,
-                  headerStyle: {backgroundColor: '#14417b'},
-                  headerTintColor: '#FFFFFF',
+                  headerShown: false,
                 }
               }
 
