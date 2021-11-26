@@ -9,12 +9,9 @@ function Sobre() {
         <View style={estiloResumo.container}>
             <View style={estiloResumo.borda}>
                  
-            <Text style={estiloResumo.texto01}> Cillian Murphy </Text>
-             <Text style={estiloResumo.texto}>O Cillian Murphy é um ator conhecido por suas colaborações
-              com o diretor Christopher Nolan, interpretando o Espantalho na trilogia de The Dark Knight
-               (2005-2012) e aparecendo no thriller de ação e ficção científica Inception (2010) e no
-                drama de guerra Dunkirk (2017). </Text>
-<Text style={estiloResumo.texto02}> Você deseja voltar para a tela inicial? Aperte no botão abaixo! </Text>
+            <Text style={estiloResumo.titulo}> Matrix </Text>
+             <Text style={estiloResumo.texto}> Projeto sobre o primeiro filme da triologia Matrix </Text>
+
 
                 <TouchableOpacity style={estiloResumo.botaoContainer}>
                    <Text style={estiloResumo.botaoTexto}>Voltar</Text> 

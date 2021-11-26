@@ -9,23 +9,14 @@ const estiloSobre = StyleSheet.create({
     },
     
     borda: {
-        backgroundColor: '#1C1C1C',
+        backgroundColor: '#1c1c1c',
         width: '80%',
         height: '50%',
         borderRadius: 10,
     },
-
-    texto02: {
-        fontSize: 20,
-        color: '#FFFFFF',
-        fontWeight: 'bold',
-        textAlign: "center",
-        padding: 10
-    },
-
-    texto01: {
+    titulo: {
         fontSize: 25,
-        color: '#FFFFFF',
+        color: '#0fd830',
         fontWeight: 'bold',
         textAlign: "center",
         padding: 10
@@ -55,7 +46,7 @@ const estiloSobre = StyleSheet.create({
     },
     botaoTexto: {
         fontSize: 18,
-        color: '#FFFFFF',
+        color: '#0fd830',
         fontWeight:'bold'
     },
 });

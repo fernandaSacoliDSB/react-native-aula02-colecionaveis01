@@ -6,7 +6,7 @@ import Sobre from './src/views/Sobre/Sobre'
 
 export default function App() {
   return (
-      <Inicial />
+      <Detalhes />
   );
 }
 
