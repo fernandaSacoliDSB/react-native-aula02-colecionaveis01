@@ -1,14 +1,12 @@
-import 'react-native-gesture-handler';
-import React from 'react';
-import { StatusBar } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import RotasLoginStack from './src/components/rotasStack/RotasLoginStack';
 
-export default function App () {
+import React from 'react';
+import Inicial from './src/views/Inicio/Inicio';
+import Detalhes from'./src/views/Detalhes/Detalhes';
+import Sobre from './src/views/Sobre/Sobre'
+
+export default function App() {
   return (
-    <NavigationContainer>
-      <StatusBar barStyle="light-content" backgroundColor="081a31" />
-      <RotasLoginStack />
-    </NavigationContainer>
+      <Inicial />
   );
 }
+
